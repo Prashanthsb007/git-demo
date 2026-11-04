@@ -7,7 +7,7 @@ export const account = {
 export const transactions = [
     {
         type: "Deposit",
-        amount: 5000,
+        amount: 6000,
         date: "2026-11-01"
     },
     {

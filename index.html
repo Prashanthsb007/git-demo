@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Banking Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MyBank</h1>
+        <p>Simple Banking Application</p>
+    </header>
+
+    <main class="container">
+
+        <section class="account-card">
+            <h2>Account Overview</h2>
+            <p>Account Holder: <strong id="accountName"></strong></p>
+            <p>Account Number: <strong id="accountNumber"></strong></p>
+
+            <div class="balance">
+                <span>Available Balance</span>
+                <h2 id="balance">₹0</h2>
+            </div>
+        </section>
+
+        <section class="transaction-card">
+            <h2>Banking Operations</h2>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter amount"
+                min="1"
+            >
+
+            <div class="actions">
+                <button onclick="deposit()">Deposit</button>
+                <button class="withdraw" onclick="withdraw()">
+                    Withdraw
+                </button>
+            </div>
+
+            <p id="message"></p>
+        </section>
+
+        <section class="history-card">
+            <h2>Recent Transactions</h2>
+            <ul id="transactionList"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 MyBank - Demo Application</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>
